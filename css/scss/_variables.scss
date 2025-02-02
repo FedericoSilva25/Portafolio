@@ -1,10 +1,13 @@
+@use "sass:color";
 // Colores
-$primary-color: #f0f4f8;
-$secondary-color: #ff6f61;
+$primary-color: #A7C7E7; // Azul pastel
+$secondary-color: #F2E9E4; // Crema suave
 $background-dark: rgba(31, 48, 76, 1);
-$text-light: #f0f4f8;
-$text-dark: #1f304c;
+$background-light: #F7FAFC; // Fondo claro
+$text-light: #F2E9E4;
+$text-dark: #333333; // Texto oscuro para mejor contraste
 $accent-color: #4a90e2;
+$highlight-color: #FFD700; // Dorado para resaltar elementos importantes
 
 // Fuentes
 $font-primary: 'Inter', sans-serif;
@@ -30,4 +33,24 @@ $spacing: (
 
 // Transiciones
 $transition-base: all 0.3s ease-in-out;
-$background-light: #f8f9fa;
+
+// Estilos base
+body {
+  background-color: $background-light;
+  color: $text-dark;
+}
+
+button {
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  background-color: $primary-color;
+  color: $text-dark;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: $transition-base;
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -10%);
+  }
+}

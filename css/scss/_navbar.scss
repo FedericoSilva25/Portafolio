@@ -1,3 +1,7 @@
+@use 'variables' as *;
+@use "sass:map";
+
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -45,7 +49,8 @@
         }
     }
 
-    @media (max-width: map-get($breakpoints, lg)) {
+    @media (max-width: map.get($breakpoints, "lg")) {
+
         background: $background-light;
 
         .navbar-toggler {

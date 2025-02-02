@@ -97,37 +97,33 @@ window.addEventListener('scroll', () => {
     }
 })
 
-document.addEventListener("DOMContentLoaded", function () {
-    const typedText = document.querySelector("#typed-text");
-    const words = ["David Federico Silva"];
-    let wordIndex = 0;
-    let letterIndex = 0;
-    let currentText = "";
-    let isDeleting = false;
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollElements = document.querySelectorAll(".scroll-animate");
 
-    function typeEffect() {
-        currentText = words[wordIndex];
+    const elementInView = (el, offset = 100) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return (
+            elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset
+        );
+    };
 
-        if (isDeleting) {
-            letterIndex--;
-        } else {
-            letterIndex++;
-        }
+    const displayScrollElement = (element) => {
+        element.classList.add("visible");
+    };
 
-        typedText.innerText = currentText.substring(0, letterIndex);
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 100)) {
+                displayScrollElement(el);
+            }
+        });
+    };
 
-        if (!isDeleting && letterIndex === currentText.length) {
-            setTimeout(() => (isDeleting = true), 1000); // Pausa antes de borrar
-        } else if (isDeleting && letterIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length; // Cambia al siguiente texto
-        }
+    window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+    });
 
-        setTimeout(typeEffect, isDeleting ? 50 : 100);
-    }
-
-    // Solo ejecuta el efecto si encuentra el elemento
-    if (typedText) {
-        typeEffect();
-    }
+    // Ejecutar en carga inicial por si hay elementos visibles desde el principio
+    handleScrollAnimation();
 });
+

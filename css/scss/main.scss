@@ -1,17 +1,20 @@
 // Variables
-@import 'variables';
+@use 'variables' as *;
+@use "sass:color";
+
+@use 'variables';
 
 // Componentes
-@import 'navbar';
-@import 'hero';
-@import 'about';
-@import 'skills';
-@import 'projects';
-@import 'contact';
-@import 'education';
-@import 'buttons';
+@use 'navbar';
+@use 'hero';
+@use 'about';
+@use 'skills';
+@use 'projects';
+@use 'contact';
+@use 'education';
+@use 'buttons';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 // Estilos globales
 body {
     font-family: $font-primary;
@@ -58,7 +61,9 @@ h1, h2, h3, h4 {
 }
 
 .btn-contact:hover {
-    background: darken($accent-color, 10%);
+  background: color.adjust($accent-color, $lightness: -10%);
+
+
 }
 @media (max-width: 992px) {
     .navbar {
@@ -66,6 +71,22 @@ h1, h2, h3, h4 {
     }
 }
 
+@media (max-width: 1200px) {
+    // Ajustes para pantallas grandes
+  }
+  
+  @media (max-width: 992px) {
+    // Ajustes mejorados para tablets
+  }
+  
+  @media (max-width: 768px) {
+    // Ajustes para móviles medianos
+  }
+  
+  @media (max-width: 480px) {
+    // Ajustes para móviles pequeños
+  }
+  
 @media (max-width: 768px) {
     .hero {
         .container {
@@ -82,4 +103,37 @@ h1, h2, h3, h4 {
     .skills-category, .project-card, .contact-form {
         padding: 1rem;
     }
+
+
+// Efectos de hover en imágenes
+img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Hover en enlaces
+a {
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
+// Jerarquía visual para títulos y párrafos
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: color.adjust($text-dark, $lightness: -10%);
+
+
+}
+
 }
