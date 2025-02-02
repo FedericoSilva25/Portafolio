@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Federico Silva - Portfolio</title>
+    <meta name="description" content="Portafolio de David Federico Silva - Desarrollador Web en React, JavaScript y más.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- AOS.js para animaciones en scroll -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">DFS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="CVFedericoSilva.pdf"David_Federico_Silva_CV.pdf" class="btn btn-primary">Descargar CV</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container position-relative">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 id="typed-text" class="display-4 fw-bold mb-3 text-white">David Federico Silva</h1>
+                    <p class="lead mb-4 text-white">Desarrollador Frontend Junior</p>
+                    <p class="mb-4 text-white">
+                        📱 +54 3517515451 📍 Córdoba, Argentina <br>
+                        <a href="https://www.linkedin.com/in/david-federico-silva-cvactualizado/" target="_blank" class="text-white">LinkedIn</a> | 
+                        <a href="https://github.com/FedericoSilva25" target="_blank" class="text-white">GitHub</a> <br>
+                        📧 <a href="mailto:fedessilva19@gmail.com" class="text-white">fedessilva19@gmail.com</a>
+                    </p>
+                    <a href="#projects" class="btn btn-primary btn-lg">Ver Proyectos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p class="section-subtitle">Conoce mi trayectoria profesional</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <h3>Perfil Profesional</h3>
+                        <p>Soy un desarrollador frontend junior con conocimientos en HTML, CSS, JavaScript, React.js y diseño responsivo. Me apasiona crear interfaces atractivas, accesibles y funcionales, aplicando buenas prácticas de desarrollo y optimización web. Actualmente, continúo mejorando mis habilidades a través de proyectos personales y formación en Coderhouse y HolaMundo. Busco formar parte de un equipo donde pueda aprender y aportar con soluciones eficientes y creativas.</p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">2016 - 2024</span>
+                                <h4>Dueño/Socio y Gerente, XXX CRAFTBEER, Valu, Meating – Córdoba</h4>
+                                <p>Gestión y administración de negocios con enfoque en eficiencia y digitalización. Implementación de herramientas digitales para optimización operativa y experiencia del usuario. Liderazgo de equipos y manejo de clientes en entornos de alta demanda.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2015 - 2017</span>
+                                <h4>Encargado de Personal y Caja, Brocante – Córdoba</h4>
+                                <p>Supervisión de personal y optimización de procesos administrativos. Gestión de atención al cliente y resolución de problemas.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2014 - 2015</span>
+                                <h4>Representante de Atención al Cliente, Call Quick Solutions</h4>
+                                <p>Resolución de problemas y asesoramiento al cliente. Desarrollo de habilidades de comunicación y negociación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="assets/images/profile.jpg" alt="David Federico Silva" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Mis Habilidades</h2>
+                    <p class="section-subtitle">Tecnologías y herramientas que manejo</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Bootstrap</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SCSS/SASS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skills-category">
+                        <h3>Backend & Herramientas</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Express.js</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>GitHub</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Mis Proyectos</h2>
+                    <p class="section-subtitle">Trabajos destacados</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Project Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Proyectoarcata.jpg" alt="Arcata / ArcataReal" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>Arcata / ArcataReal (En desarrollo)</h3>
+                            <p>Tienda online para una marca de ropa inspirada en la ciudad de Arcata. Cada versión del proyecto fue realizada para aprender diferentes tecnologías y aplicarlas.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-primary">Node.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Proyecto2.jpg" alt="Desafío Técnico – Sherpa.wtf" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>Desafío Técnico – Sherpa.wtf</h3>
+                            <p>Implementación de un asistente de viajes conversacional utilizando TypeScript, LangGraph y Express.js.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">TypeScript</span>
+                                <span class="badge bg-primary">Express.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding bg-light" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Educación y Logros</h2>
+                    <p class="section-subtitle">Mi formación académica y certificaciones</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="education-item">
+                        <h4>Carrera de Desarrollo Web – Coderhouse (En curso)</h4>
+                    </div>
+                    <div class="education-item">
+                        <h4>Ruta Frontend – HolaMundo (En curso)</h4>
+                    </div>
+                    <div class="education-item">
+                        <h4>Técnico Superior en Gastronomía – Azafrán de Córdoba (2013)</h4>
+                    </div>
+                    <div class="education-item">
+                        <h4>Secundaria Completa – Instituto Nuestra Señora de Córdoba (2010)</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="education-item">
+                        <h4>Certificaciones en trading con empresas de fondeo</h4>
+                    </div>
+                    <div class="education-item">
+                        <h4>Desarrollo y gestión de tres negocios propios en el sector gastronómico</h4>
+                    </div>
+                    <div class="education-item">
+                        <h4>Progresos significativos en proyectos web utilizando tecnologías modernas</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-light" data-aos="zoom-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+
+                    <h2 class="section-title">Contacto</h2>
+                    <p class="section-subtitle">¿Tienes un proyecto en mente?</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Duración de las animaciones en milisegundos
+        once: true, // Para que la animación solo ocurra una vez
+    });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html> 

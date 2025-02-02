@@ -1,0 +1,53 @@
+.skills {
+    background: $background-light;
+    
+    .skills-category {
+        background-color: rgba(31, 48, 76, 0.8);
+        color: $text-light;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba($text-dark, 0.05);
+        
+
+        h3 {
+            color: $text-light;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .skill-info {
+            color: $text-light;
+        }
+    }
+    
+    .skill-item {
+        margin-bottom: 1.5rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            color: $text-dark;
+            font-weight: 500;
+
+        }
+        
+        .progress {
+            height: 8px;
+            background: rgba($primary-color, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            
+
+            .progress-bar {
+                background: $primary-color;
+                transition: width 1s ease;
+            }   
+
+        }
+    }
+} 

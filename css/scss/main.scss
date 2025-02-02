@@ -1,0 +1,85 @@
+// Variables
+@import 'variables';
+
+// Componentes
+@import 'navbar';
+@import 'hero';
+@import 'about';
+@import 'skills';
+@import 'projects';
+@import 'contact';
+@import 'education';
+@import 'buttons';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+// Estilos globales
+body {
+    font-family: $font-primary;
+    background-color: $background-dark;
+    color: $text-light;
+    background-image: url("../assets/images/3428111.jpg");
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija el fondo al hacer scroll */
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+// Utilidades
+.section-padding {
+    padding: 100px 0;
+}
+
+// Animaciones
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
+    transform: none;
+} 
+
+.btn-contact {
+    background: $accent-color;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+    background: darken($accent-color, 10%);
+}
+@media (max-width: 992px) {
+    .navbar {
+        background: rgba(15, 23, 42, 0.95); /* Color oscuro semi-transparente */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        .container {
+            padding: 0 1rem;
+        }
+    }
+
+    .navbar {
+        .nav-link {
+            padding: 0.5rem;
+        }
+    }
+
+    .skills-category, .project-card, .contact-form {
+        padding: 1rem;
+    }
+}

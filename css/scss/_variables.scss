@@ -1,0 +1,33 @@
+// Colores
+$primary-color: #f0f4f8;
+$secondary-color: #ff6f61;
+$background-dark: rgba(31, 48, 76, 1);
+$text-light: #f0f4f8;
+$text-dark: #1f304c;
+$accent-color: #4a90e2;
+
+// Fuentes
+$font-primary: 'Inter', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+// Breakpoints
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+// Espaciado
+$spacing: (
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 1rem,
+    4: 1.5rem,
+    5: 3rem
+);
+
+// Transiciones
+$transition-base: all 0.3s ease-in-out;
+$background-light: #f8f9fa;
