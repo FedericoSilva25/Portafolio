@@ -140,14 +140,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -50px;
+  margin-bottom: -20px;
   z-index: 2;
   width: 100%;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 350px;
+  max-width: 250px;
   border-radius: 50%;
   filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease-in-out;
@@ -157,20 +157,22 @@ button:hover {
 }
 
 .about-title-container {
-  background: rgba(255, 255, 255, 0.9);
+  margin-top: 20px;
   padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: fit-content;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   position: relative;
   z-index: 1;
-  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 750px;
 }
 .about-title-container:hover {
   transform: scale(1.05);
@@ -193,21 +195,22 @@ button:hover {
 }
 
 .about-content {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 1.5rem;
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   color: rgb(16, 11, 5);
   position: relative;
   z-index: 1;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 90%;
-  max-width: 800px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 .about-content:hover {
   transform: translateY(-5px) scale(1.05);
