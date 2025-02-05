@@ -37,26 +37,7 @@
     }
 }
 
-// Imagen de perfil (corrección de superposición)
-.about-image {
-    width: 100%;
-    max-width: 410px; // Imagen más grande
-    margin-bottom: 2px; // Separación clara con el contenedor
-    position: relative;
-    z-index: 1;
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease-in-out;
-
-        &:hover {
-            transform: translateY(-5px) scale(1.05);
-        }
-    }
-}
 
 // Contenedor "Perfil Profesional"
 .about-title-container {
