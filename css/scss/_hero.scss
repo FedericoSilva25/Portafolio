@@ -6,14 +6,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    padding: 50px 0;
 
     h1 {
-        color: $text-light;
+        color: $text-dark; // Texto más oscuro para mejorar visibilidad
         animation: fadeInDown 1s ease;
     }
 
     .lead {
-        color: $text-light;
+        color: $text-dark;
         animation: fadeInUp 1s ease 0.3s;
         animation-fill-mode: both;
     }
@@ -22,31 +24,59 @@
         animation: fadeInUp 1s ease 0.6s;
         animation-fill-mode: both;
     }
-}
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
+    /* Imagen de perfil en el Hero */
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px auto;
+        width: 190px;
+        height: 190px;
+
+        @media (min-width: 768px) {
+            width: 220px;
+            height: 220px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 250px;
+            height: 250px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+            }
+        }
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    /* Contenedor con animación para el contenido del Hero */
+    .hero-content-container {
+        max-width: 800px; // Más espacio
+        padding: 40px; // Aumenta el padding interno
+        background: rgba(255, 255, 255, 0.85); // Más opaco para mejor legibilidad
+        border-radius: 12px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px auto;
+        animation: fadeInUp 1s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3), -10px -10px 25px rgba(255, 255, 255, 0.4);
+        }
+
+        h1, p {
+            color: #222; // Asegura que el texto sea oscuro y legible
+        }
     }
 }
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero img, .project-image img {
-    max-width: 100%;
-    height: auto;
-} 

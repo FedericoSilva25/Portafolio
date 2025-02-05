@@ -14,6 +14,50 @@
 @use 'education';
 @use 'buttons';
 
+// Animación de entrada suave
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+// Animación de levitación al pasar el mouse
+@keyframes floatEffect {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+// Aplicar animación al cargar
+.about {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+// Efecto flotante en hover
+.about-title-container, .about-content {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+      transform: translateY(-5px);
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3), -10px -10px 25px rgba(255, 255, 255, 0.6);
+      animation: floatEffect 1.5s infinite ease-in-out;
+  }
+}
+
+// Efecto de escala en la imagen al hacer hover
+.about-image img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+}
 
 // Estilos globales
 body {
@@ -135,5 +179,6 @@ p {
 
 
 }
+
 
 }

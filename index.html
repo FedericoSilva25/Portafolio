@@ -58,70 +58,75 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container position-relative">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 id="typed-text" class="display-4 fw-bold mb-3 text-white">David Federico Silva</h1>
-                    <p class="lead mb-4 text-white">Desarrollador Frontend Junior</p>
-                    <p class="mb-4 text-white">
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <!-- Imagen centrada y bien alineada -->
+                <div class="about-image" data-aos="fade-down">
+                    <img src="assets/images/profile.jpg" alt="David Federico Silva" class="img-fluid rounded-circle shadow">
+                </div>
+                
+                <!-- Contenedor con animación para el contenido -->
+                <div class="hero-content-container" data-aos="fade-up">
+                    <h1 id="typed-text" class="display-4 fw-bold mb-3">David Federico Silva</h1>
+                    <p class="lead mb-4">Desarrollador Frontend Junior</p>
+                    <p class="mb-4">
                         📱 +54 3517515451 📍 Córdoba, Argentina <br>
-                        <a href="https://www.linkedin.com/in/david-federico-silva-cvactualizado/" target="_blank" class="text-white">LinkedIn</a> | 
-                        <a href="https://github.com/FedericoSilva25" target="_blank" class="text-white">GitHub</a> <br>
-                        📧 <a href="mailto:fedessilva19@gmail.com" class="text-white">fedessilva19@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/david-federico-silva-cvactualizado/" target="_blank">LinkedIn</a> | 
+                        <a href="https://github.com/FedericoSilva25" target="_blank">GitHub</a> <br>
+                        📧 <a href="mailto:fedessilva19@gmail.com">fedessilva19@gmail.com</a>
                     </p>
                     <a href="#projects" class="btn btn-primary btn-lg">Ver Proyectos</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- About Section -->
+<section id="about" class="about section-padding" data-aos="fade-up">
+    <div class="container about-container">
+        <!-- Columna Izquierda (Imagen + Perfil Profesional) -->
+        <div class="about-left">
+          
+            <div class="about-title-container" data-aos="fade-right">
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Soy un desarrollador frontend junior con conocimientos en HTML, CSS, JavaScript, React.js y 
+                    diseño responsivo. Me apasiona crear interfaces atractivas, accesibles y funcionales, aplicando buenas prácticas de 
+                    desarrollo y optimización web. Actualmente, continúo mejorando mis habilidades a través de proyectos personales y 
+                    formación en Coderhouse y HolaMundo. Busco formar parte de un equipo donde pueda aprender y aportar con soluciones 
+                    eficientes y creativas.
+                </p>
+            </div>
+        </div>
 
-    <!-- About Section -->
-    <section id="about" class="about section-padding" data-aos="fade-up">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Primero la imagen de perfil -->
-                <div class="col-12 text-center">
-                    <div class="about-image">
-                        <img src="assets/images/profile.jpg" alt="David Federico Silva" class="img-fluid rounded-3 shadow">
+        <!-- Columna Derecha (Experiencia Laboral) -->
+        <div class="about-right">
+            <div class="about-content" data-aos="fade-left">
+                <h3>Experiencia Laboral</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2016 - 2024</span>
+                        <h4>Dueño/Socio y Gerente, XXX CRAFTBEER, Valu, Meating – Córdoba</h4>
+                        <p>Gestión y administración de negocios con enfoque en eficiencia y digitalización. Implementación de herramientas digitales para optimización operativa y experiencia del usuario. Liderazgo de equipos y manejo de clientes en entornos de alta demanda.</p>
                     </div>
-                </div>
-                <!-- Luego el contenedor "Sobre Mí" -->
-                <div class="col-12 text-center">
-                    <div class="about-title-container">
-                        <h2 class="about-title">Sobre Mí</h2>
-                        <p class="section-subtitle">Conoce mi trayectoria profesional</p>
+                    <div class="timeline-item">
+                        <span class="date">2015 - 2017</span>
+                        <h4>Encargado de Personal y Caja, Brocante – Córdoba</h4>
+                        <p>Supervisión de personal y optimización de procesos administrativos. Gestión de atención al cliente y resolución de problemas.</p>
                     </div>
-                </div>
-                <!-- Finalmente el contenedor "Perfil Profesional" -->
-                <div class="col-12 text-center">
-                    <div class="about-content">
-                        <h3>Perfil Profesional</h3>
-                        <p>Soy un desarrollador frontend junior con conocimientos en HTML, CSS, JavaScript, React.js y diseño responsivo. Me apasiona crear interfaces atractivas, accesibles y funcionales, aplicando buenas prácticas de desarrollo y optimización web. Actualmente, continúo mejorando mis habilidades a través de proyectos personales y formación en Coderhouse y HolaMundo. Busco formar parte de un equipo donde pueda aprender y aportar con soluciones eficientes y creativas.</p>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="date">2016 - 2024</span>
-                                <h4>Dueño/Socio y Gerente, XXX CRAFTBEER, Valu, Meating – Córdoba</h4>
-                                <p>Gestión y administración de negocios con enfoque en eficiencia y digitalización. Implementación de herramientas digitales para optimización operativa y experiencia del usuario. Liderazgo de equipos y manejo de clientes en entornos de alta demanda.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="date">2015 - 2017</span>
-                                <h4>Encargado de Personal y Caja, Brocante – Córdoba</h4>
-                                <p>Supervisión de personal y optimización de procesos administrativos. Gestión de atención al cliente y resolución de problemas.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="date">2014 - 2015</span>
-                                <h4>Representante de Atención al Cliente, Call Quick Solutions</h4>
-                                <p>Resolución de problemas y asesoramiento al cliente. Desarrollo de habilidades de comunicación y negociación.</p>
-                            </div>
-                        </div>
+                    <div class="timeline-item">
+                        <span class="date">2014 - 2015</span>
+                        <h4>Representante de Atención al Cliente, Call Quick Solutions</h4>
+                        <p>Resolución de problemas y asesoramiento al cliente. Desarrollo de habilidades de comunicación y negociación.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+</section>
 
     <!-- Skills Section -->
     <section id="skills">
@@ -175,96 +180,79 @@
     
     
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section-padding" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Mis Proyectos</h2>
-                    <p class="section-subtitle">Trabajos destacados</p>
-                </div>
+ <!-- Projects Section -->
+<section id="projects" class="projects section-padding" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <p class="section-subtitle">Trabajos destacados</p>
             </div>
-            <div class="row g-4">
-                <!-- Project Card -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proyectoarcata.jpg" alt="Arcata / ArcataReal" class="img-fluid">
+        </div>
+        <div class="row g-4">
+            <!-- Proyecto 1: Arcata -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/Proyectoarcata.jpg" alt="Arcata / ArcataReal" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Arcata / ArcataReal (En desarrollo)</h3>
+                        <p>Tienda online para una marca de ropa inspirada en la ciudad de Arcata. Cada versión del proyecto fue realizada para aprender diferentes tecnologías y aplicarlas.</p>
+                        <div class="project-tags">
+                            <span class="badge bg-primary">React</span>
+                            <span class="badge bg-primary">Node.js</span>
                         </div>
-                        <div class="project-content">
-                            <h3>Arcata / ArcataReal (En desarrollo)</h3>
-                            <p>Tienda online para una marca de ropa inspirada en la ciudad de Arcata. Cada versión del proyecto fue realizada para aprender diferentes tecnologías y aplicarlas.</p>
-                            <div class="project-tags">
-                                <span class="badge bg-primary">React</span>
-                                <span class="badge bg-primary">Node.js</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
-                            </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proyecto2.jpg" alt="Desafío Técnico – Sherpa.wtf" class="img-fluid">
+            </div>
+            <!-- Proyecto 2: Sherpa.wtf -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/Proyecto2.jpg" alt="Desafío Técnico – Sherpa.wtf" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Desafío Técnico – Sherpa.wtf</h3>
+                        <p>Implementación de un asistente de viajes conversacional utilizando TypeScript, LangGraph y Express.js.</p>
+                        <div class="project-tags">
+                            <span class="badge bg-primary">TypeScript</span>
+                            <span class="badge bg-primary">Express.js</span>
                         </div>
-                        <div class="project-content">
-                            <h3>Desafío Técnico – Sherpa.wtf</h3>
-                            <p>Implementación de un asistente de viajes conversacional utilizando TypeScript, LangGraph y Express.js.</p>
-                            <div class="project-tags">
-                                <span class="badge bg-primary">TypeScript</span>
-                                <span class="badge bg-primary">Express.js</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
-                            </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto 3: Portafolio -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/ProyectoPortafolio.jpg" alt="Mi Portafolio" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mi Portafolio</h3>
+                        <p>Un sitio web donde presento mis proyectos, habilidades y experiencia. Desarrollado con un diseño atractivo, 
+                            responsivo y optimizado para una excelente experiencia de usuario.</p>
+                        <div class="project-tags">
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-primary">SCSS</span>
+                            <span class="badge bg-primary">JavaScript</span>
+                            <span class="badge bg-primary">React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FedericoSilva25" class="btn btn-outline-primary btn-sm" target="_blank">Ver en GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section-padding bg-light" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Educación y Logros</h2>
-                    <p class="section-subtitle">Mi formación académica y certificaciones</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="education-item">
-                        <h4>Carrera de Desarrollo Web – Coderhouse (En curso)</h4>
-                    </div>
-                    <div class="education-item">
-                        <h4>Ruta Frontend – HolaMundo (En curso)</h4>
-                    </div>
-                    <div class="education-item">
-                        <h4>Técnico Superior en Gastronomía – Azafrán de Córdoba (2013)</h4>
-                    </div>
-                    <div class="education-item">
-                        <h4>Secundaria Completa – Instituto Nuestra Señora de Córdoba (2010)</h4>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="education-item">
-                        <h4>Certificaciones en trading con empresas de fondeo</h4>
-                    </div>
-                    <div class="education-item">
-                        <h4>Desarrollo y gestión de tres negocios propios en el sector gastronómico</h4>
-                    </div>
-                    <div class="education-item">
-                        <h4>Progresos significativos en proyectos web utilizando tecnologías modernas</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section-padding bg-light" data-aos="zoom-in">
@@ -306,10 +294,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init({
-        duration: 1000, // Duración de las animaciones en milisegundos
+        duration: 1000,
+        easing: 'ease-in-out',
         once: true, // Para que la animación solo ocurra una vez
     });
 </script>
+
 <script src="js/main.js"></script>
 </body>
 </html> 
