@@ -69,6 +69,11 @@ body {
     background-position: center; // Centra la imagen
     background-attachment: fixed; // Fija el fondo al hacer scroll
     background-repeat: no-repeat;
+    @media (max-width: 768px) {
+      background-size: auto; // Mantiene la imagen en su tamaño original
+      background-position: top center; // Ajusta la posición si es necesario
+  }
+
 }
 
 h1, h2, h3, h4 {

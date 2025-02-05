@@ -18,11 +18,11 @@
 
     @media (min-width: 992px) {
         flex-direction: row;
-        align-items: flex-end; // Asegura que los contenedores terminen alineados abajo
+        align-items: stretch;
         justify-content: space-between;
+        gap: 20px; // Espaciado entre las tarjetas para que no queden pegadas
     }
 }
-
 // Contenedor izquierdo (Imagen + Perfil Profesional)
 .about-left {
     display: flex;
@@ -32,7 +32,7 @@
     position: relative; // Permite mover la imagen de forma independiente
 
     @media (min-width: 992px) {
-        width: 50%;
+        width: 55%;  // Aumentamos el ancho para alinear con la otra tarjeta
         align-items: center;
     }
 }
@@ -48,23 +48,24 @@
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left; // Asegura que el texto quede alineado como en la otra sección
 
     &:hover {
         transform: translateY(-5px) scale(1.03);
         box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3), -10px -10px 25px rgba(255, 255, 255, 0.6);
     }
-
     h2 {
         font-size: 2rem;
         color: rgba(9,81,139,255);
         font-weight: bold;
+        text-align: center; // Asegura que el título también quede alineado a la izquierda
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: rgba(16,11,5,255);
-        text-align: center;
-        margin-top: 10px;
+        text-align: center; // Alinea el texto como el de "Experiencia Laboral"
+        margin-top: 1px;
     }
 }
 
@@ -74,7 +75,7 @@
     margin-top: 40px;
 
     @media (min-width: 992px) {
-        width: 50%;
+        width: 45%; // Reducimos un poco el ancho para que se alineen bien
         margin-top: 0;
     }
 }
@@ -87,7 +88,7 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     color: rgba(16,11,5,255);
-    text-align: left;
+    text-align: center;
     width: 100%;
 
     &:hover {
@@ -112,4 +113,12 @@
         font-size: 1rem;
         color: rgba(16,11,5,255);
     }
+}
+// Igualar la altura de los cuadros de información
+.about-title-container, .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Distribuye el contenido uniformemente
+    height: 100%; // Se iguala con el otro cuadro
+    min-height: 100%;
 }

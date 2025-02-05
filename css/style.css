@@ -170,8 +170,9 @@ button:hover {
 @media (min-width: 992px) {
   .about-container {
     flex-direction: row;
-    align-items: flex-end;
+    align-items: stretch;
     justify-content: space-between;
+    gap: 20px;
   }
 }
 
@@ -184,27 +185,9 @@ button:hover {
 }
 @media (min-width: 992px) {
   .about-left {
-    width: 50%;
+    width: 55%;
     align-items: center;
   }
-}
-
-.about-image {
-  width: 100%;
-  max-width: 410px;
-  margin-bottom: 2px;
-  position: relative;
-  z-index: 1;
-}
-.about-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-.about-image img:hover {
-  transform: translateY(-5px) scale(1.05);
 }
 
 .about-title-container {
@@ -215,6 +198,7 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
 }
 .about-title-container:hover {
   transform: translateY(-5px) scale(1.03);
@@ -224,12 +208,13 @@ button:hover {
   font-size: 2rem;
   color: rgb(9, 81, 139);
   font-weight: bold;
+  text-align: center;
 }
 .about-title-container p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgb(16, 11, 5);
   text-align: center;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .about-right {
@@ -238,7 +223,7 @@ button:hover {
 }
 @media (min-width: 992px) {
   .about-right {
-    width: 50%;
+    width: 45%;
     margin-top: 0;
   }
 }
@@ -250,7 +235,7 @@ button:hover {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   color: rgb(16, 11, 5);
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 .about-content:hover {
@@ -272,6 +257,14 @@ button:hover {
 .timeline-item p {
   font-size: 1rem;
   color: rgb(16, 11, 5);
+}
+
+.about-title-container, .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 100%;
 }
 
 .skills {
@@ -507,6 +500,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  body {
+    background-size: auto;
+    background-position: top center;
+  }
 }
 
 h1, h2, h3, h4 {
