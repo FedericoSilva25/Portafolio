@@ -70,10 +70,11 @@ body {
     background-attachment: fixed; // Fija el fondo al hacer scroll
     background-repeat: no-repeat;
     @media (max-width: 768px) {
-      background-size: auto; // Mantiene la imagen en su tamaño original
-      background-position: top center; // Ajusta la posición si es necesario
+      background-size: contain; // Asegura que la imagen no se estire
+      background-repeat: repeat; // Repite la imagen hasta cubrir la pantalla
+      background-position: top center; // Asegura una distribución uniforme
+      background-attachment: scroll; // Evita bugs en mobile con imágenes fijas
   }
-
 }
 
 h1, h2, h3, h4 {

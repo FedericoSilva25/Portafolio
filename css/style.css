@@ -503,8 +503,10 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    background-size: auto;
+    background-size: contain;
+    background-repeat: repeat;
     background-position: top center;
+    background-attachment: scroll;
   }
 }
 
