@@ -89,23 +89,28 @@ document.addEventListener("DOMContentLoaded", function() {
             const botonEnviar = contactForm.querySelector(".btn-primary");
 
             if (nombre === "" || email === "" || mensaje === "") {
-                alert("Por favor completa todos los campos.");
+                alert("⚠️ Por favor completa todos los campos.");
                 return;
             }
 
+            // Deshabilitar el botón para evitar múltiples envíos
             botonEnviar.textContent = "Enviando...";
             botonEnviar.disabled = true;
 
-            emailjs.send("service_dmc49ia", "template_b8zinqn", { nombre, email, mensaje }, "ms_wB11dR7LoYDevD")
+            emailjs.send("service_dmc49ia", "template_u1kucud", { nombre, email, mensaje }, "ms_wB11dR7LoYDevD")
                 .then(function(response) {
-                    alert("✅ Mensaje enviado con éxito!");
-                    contactForm.reset();
-                    botonEnviar.textContent = "Enviar Mensaje";
-                    botonEnviar.disabled = false;
+                    if (response.status === 200) { // Solo si la respuesta es correcta
+                        alert("✅ Mensaje enviado con éxito!");
+                        contactForm.reset();
+                    } else {
+                        alert("⚠️ El mensaje se envió, pero hubo un problema con el servidor.");
+                    }
                 })
                 .catch(function(error) {
-                    alert("❌ Error al enviar el mensaje, intenta de nuevo.");
                     console.error("EmailJS Error:", error);
+                    alert("❌ Error al enviar el mensaje. Inténtalo nuevamente.");
+                })
+                .finally(() => {
                     botonEnviar.textContent = "Enviar Mensaje";
                     botonEnviar.disabled = false;
                 });
