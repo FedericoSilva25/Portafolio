@@ -1,26 +1,42 @@
 @use 'variables' as *;
 
 .contact {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 1), rgba(230, 230, 230, 1)); // Fondo sutil
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: rgba(9, 81, 139, 255);
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+        color: rgba(16, 11, 5, 0.7);
+        margin-bottom: 30px;
+    }
+
     .contact-form {
-        background-color: rgba(31, 48, 76, 0.8);
-        color: $text-light;
+        background: white;
+        color: rgba(16, 11, 5, 255);
         padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba($text-dark, 0.05);
-        
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto; // Centra el formulario
 
         .form-control {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: $text-light;
-            border: 1px solid rgba($text-light, 0.5);
-            padding: 0.75rem;
-            
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 11, 5, 255);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
 
             &:focus {
-                box-shadow: none;
-                border-color: $primary-color;
-            }   
-
+                border-color: rgba(9, 81, 139, 255);
+                box-shadow: 0 0 10px rgba(9, 81, 139, 0.2);
+            }
         }
         
         textarea.form-control {
@@ -28,9 +44,33 @@
         }
         
         .btn {
-            background-color: $accent-color;
-            color: $text-light;
+            background-color: rgba(9, 81, 139, 255);
+            color: white;
             padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease-in-out;
+            border: none;
+
+            &:hover {
+                background-color: rgba(7, 65, 110, 255);
+                box-shadow: 0 4px 10px rgba(9, 81, 139, 0.3);
+            }
         }
     }
-} 
+
+    @media (max-width: 768px) {
+        .contact-form {
+            padding: 1.5rem;
+        }
+
+        .form-control {
+            padding: 0.75rem;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 0.6rem 1.5rem;
+        }
+    }
+}

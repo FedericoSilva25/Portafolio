@@ -398,38 +398,106 @@ li i {
   gap: 1rem;
 }
 
+.contact {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, rgb(245, 245, 245), rgb(230, 230, 230));
+}
+.contact .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(9, 81, 139);
+}
+.contact .section-subtitle {
+  font-size: 1.2rem;
+  color: rgba(16, 11, 5, 0.7);
+  margin-bottom: 30px;
+}
 .contact .contact-form {
-  background-color: rgba(31, 48, 76, 0.8);
-  color: #F2E9E4;
+  background: white;
+  color: rgb(16, 11, 5);
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(51, 51, 51, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
 }
 .contact .contact-form .form-control {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #F2E9E4;
-  border: 1px solid rgba(242, 233, 228, 0.5);
-  padding: 0.75rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 11, 5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 .contact .contact-form .form-control:focus {
-  box-shadow: none;
-  border-color: #A7C7E7;
+  border-color: rgb(9, 81, 139);
+  box-shadow: 0 0 10px rgba(9, 81, 139, 0.2);
 }
 .contact .contact-form textarea.form-control {
   resize: none;
 }
 .contact .contact-form .btn {
-  background-color: #4a90e2;
-  color: #F2E9E4;
+  background-color: rgb(9, 81, 139);
+  color: white;
   padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+.contact .contact-form .btn:hover {
+  background-color: rgb(7, 65, 110);
+  box-shadow: 0 4px 10px rgba(9, 81, 139, 0.3);
+}
+@media (max-width: 768px) {
+  .contact .contact-form {
+    padding: 1.5rem;
+  }
+  .contact .form-control {
+    padding: 0.75rem;
+  }
+  .contact .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
 }
 
+.education {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.95));
+}
+.education .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(9, 81, 139);
+}
+.education .section-subtitle {
+  font-size: 1.2rem;
+  color: rgba(16, 11, 5, 0.7);
+  margin-bottom: 30px;
+}
 .education .education-item {
-  background-color: rgba(31, 48, 76, 0.8);
-  color: #F2E9E4;
-  padding: 1rem;
-  border-radius: 8px;
+  background: white;
+  color: rgb(16, 11, 5);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.education .education-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+}
+.education .education-item h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .education .education-item {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
 }
 
 .button {
